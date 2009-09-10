@@ -31,7 +31,10 @@ In your layout, add
 
     <%= tooltip_for_element "trigger", "tooltip" %>
 
+= Styling
+Style is completely up to you. The tooltips are created with the tooltip class.
 
-
+= Licence
 Rails plugin copyright (c) 2009 Brian P. Hogan, released under the MIT license
+
 tooltip.js copyright (c) 2006 Jonathan Weiss <jw@innerewut.de>, released under the BSD license.
