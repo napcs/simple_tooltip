@@ -1,13 +1,37 @@
 SimpleTooltip
-=============
 
-Introduction goes here.
+Create tooltips in your application with ease
+
+== Examples
+
+In your layout, add
+
+  <%=tooltip_script_tag %>
+
+=== Simple tooltip
+
+   <div id="foo">
+     <p>Hello world</p>
+   </div>
+   
+   <%=tooltip_tag "foo", "<b>here</b> is some content" %>
+
+=== Use the Title attribute
+
+  <%=link_to "Home", root_url, {:id => "home", :title => "Go home"} %>
+  <%= tooltip_for_title "home" %>
+  
+=== Use another element on the page
+
+    <div id="trigger">This shows a tooltip from another div on this page</div>
+
+    <div id="tooltip">
+      <p><b>this</b> content comes from a div elsewhere.</p>
+    </div>
+
+    <%= tooltip_for_element "trigger", "tooltip" %>
 
 
-Example
-=======
 
-Example goes here.
-
-
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Rails plugin copyright (c) 2009 Brian P. Hogan, released under the MIT license
+tooltip.js copyright (c) 2006 Jonathan Weiss <jw@innerewut.de>, released under the BSD license.
