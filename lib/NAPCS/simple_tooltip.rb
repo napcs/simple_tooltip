@@ -33,6 +33,7 @@ module NAPCS
         var element = $("#{id}");
       
         var content = $(document.createElement("div")); 
+        content.addClassName("tooltip");
         content.innerHTML = "#{content}";
            document.body.appendChild(content);
         new Tooltip(element, content);
@@ -45,6 +46,7 @@ module NAPCS
       %Q{<script type='text/javascript'>
         var element = $("#{id}");
         var target = $("#{target}");
+        target.addClassName("tooltip");
         new Tooltip(element, target);
         </script>
       }
