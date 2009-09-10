@@ -1,6 +1,16 @@
-SimpleTooltip
+=SimpleTooltip
 
 Create tooltips in your application with ease
+
+==Installation
+
+Install as a plugin.
+
+  ruby script/plugin install git://github.com/napcs/simple_tooltip.git
+  
+Then run the rake task to move the javascript file into your public folder.
+
+  rake simple_tooltip::install
 
 == Examples
 
@@ -31,10 +41,17 @@ In your layout, add
 
     <%= tooltip_for_element "trigger", "tooltip" %>
 
-= Styling
-Style is completely up to you. The tooltips are created with the tooltip class.
+== Styling
 
-= Licence
+Style is completely up to you. The tooltips are created with the tooltip class. Style that
+
+   .tooltip{
+     background-color:#fff;
+     padding:2px;
+     border: 1px solid #000;
+   }
+
+== Licence
 Rails plugin copyright (c) 2009 Brian P. Hogan, released under the MIT license
 
 tooltip.js copyright (c) 2006 Jonathan Weiss <jw@innerewut.de>, released under the BSD license.
